@@ -1,0 +1,13 @@
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 5px double rgb(122, 14, 14);
+    background-color: white;
+    justify-content: center;
+    margin: 5px;
+}
+
+a#link {
+    color: rgb(122, 14, 14);
+}

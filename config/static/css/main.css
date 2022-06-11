@@ -1,0 +1,87 @@
+:root {
+
+    font-weight: bold;
+    font-size: 1.4em;
+    min-width: 377px;
+}
+
+a {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 1em;
+}
+
+a:visited {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+a:hover {
+    color: rgb(182, 0, 0);
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.navbar {
+    display: flexbox;
+    justify-content: center;
+    color: white;
+    background-color: rgb(2, 3, 65);
+}
+
+p#about {
+    font-size: 0.8em;
+    padding: 0.5em;
+}
+
+p#description {
+    color: rgb(255, 255, 255);
+    background-color: rgb(182, 0, 0);
+    width: fit-content;
+    width: -moz-fit-content;
+    width: -webkit-fill-available;
+    width: 80%;
+}
+
+header {
+    display: block;
+    background-color: rgb(182, 0, 0);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(https://scontent-dfw5-1.xx.fbcdn.net/v/t39.30808-6/285134443_107519595317908_3384888188072377322_n.png?stp=dst-png_p640x640&_nc_cat=105&ccb=1-7&_nc_sid=e3f864&_nc_eui2=AeFP4jnp69mlWqIWyzobSUWqcTR7v361nZ1xNHu_frWdnQfNjSDrqWAGHXYqrJ-UISKGyzKA2NsR_lIuGzLK8XOV&_nc_ohc=Rvp9D1qJfnsAX_TjCXb&_nc_ht=scontent-dfw5-1.xx&oh=00_AT-yWV4n92BL8DdGz5AsOKRurh5Ia-yjKkZE_OOaHAAQXw&oe=62A70A0B);
+    padding: 6em;
+}
+
+footer#footer{
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(2, 3, 65);
+    color: rgb(255, 255, 255);
+}
+a#main{
+    color: black;
+}
+@media screen and (max-width: 720px) {
+    main.cards {
+        background-color: rgb(182, 0, 0);
+        flex-direction: column;
+    }
+
+    main.cards section.card {
+        justify-content: space-evenly;
+        background-color: white;
+        color: rgb(0, 26, 97);
+        border: 10px double rgb(182, 0, 0);
+        margin-left: 0;
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    main.cards section.card:last-child {
+        margin-bottom: 0;
+    }
+
+    main.cards section.card button {
+        font-size: 70%;
+    }
+}

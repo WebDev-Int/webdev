@@ -1,0 +1,62 @@
+{% extends 'base.html' %}<title>About</title> {% block content %}
+
+<head>
+  <title>About</title>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'css/about.css' %}" />
+</head>
+<center>
+  <div class="container">
+    <div class="row">
+      <h1 class="about">About WebDev International</h1>
+
+      <p>
+        WebDev International is an organization that provides website creation
+        and development services to individuals and businesses.
+      </p>
+      <p>
+        We are a team of web developers who are passionate about creating
+        websites that are easy to use and easy to maintain.
+      </p>
+      <h3>
+        We are a team of web developers who are passionate about creating<br />
+        websites that are pleasing to the customer. we focus on the MERN<br />
+        stack and enjoy helping others build their websites. We specialize<br />
+        on the languages listed below.
+      </h3>
+      <br />
+      <div class="container">
+        <div class="row">
+          <p class="row">
+            Why
+            <a
+              href="https://icts.io/2020/12/23/8-popular-websites-built-with-django-framework/"
+              id="link"
+            >
+              Django?</a
+            ><br />
+            Django is a high-level Python web framework that encourages rapid
+            development and clean, pragmatic design.
+          </p>
+          <br />
+          <p class="row">
+            Why
+            <a
+              href="https://www.thirdrocktechkno.com/blog/top-10-famous-websites-built-with-react-js-in-2021/"
+              id="link"
+            >
+              React?</a
+            ><br />
+            React JS is a JavaScript library used in web development to build
+            interactive elements on websites.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</center>
+{% endblock %}

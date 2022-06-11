@@ -1,0 +1,26 @@
+div.container {
+    display: flex;
+    justify-content: center;
+    margin: 1em;
+}
+
+div.row {
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 10px double;
+    border-top-color: rgb(255, 0, 0);
+    border-left-color: rgb(2, 3, 65);
+    border-right-color: rgb(2, 3, 65);
+    border-bottom-color: rgb(206, 0, 0);
+    width: fit-content;
+    width: -moz-fit-content;
+}
+
+div.container a#link {
+    color: rgb(0, 65, 206);
+}
+/* p.row{
+    display: flex;
+    border: 2px solid red;
+} */

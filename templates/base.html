@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" lang="en" />
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge" /> -->
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static '/css/main.css' %}" />
+  </head>
+
+  <center>
+    <header></header>
+  </center>
+  <center>
+    <p id="description">Helping you to turn your ideas into reality</p>
+  </center>
+  <body>
+    {% include 'navbar.html' %} {% block content %} {% endblock %}
+    <script src="" async defer></script>
+  </body>
+  <br><br><br><br>
+
+  <center>
+  <footer id="footer"> copyright &copy; 2022 <a href="http://www.webdev-international.com">WebDev International LLC
+    <br/>
+    <a href="http://secure.rosehosting.com/clientarea/?affid=1634"
+        >Hosted by RoseHosting.com</a
+      ></footer>
+  </center>
+</html>

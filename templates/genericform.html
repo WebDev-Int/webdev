@@ -1,0 +1,13 @@
+{% include 'navbar.html' %}
+<head></head>
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'main.css' %}">
+<style></style>
+
+<div>
+    <form action="" method="post" style="margin-left: 15%;">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input aria-label="form" type="submit" value="Submit">
+    </form>
+</div>
