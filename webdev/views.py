@@ -155,3 +155,11 @@ def edit_ticket_view(request, id):
     form = adding_new_ticket_form(instance=instance)
 
     return render(request, html, {'form': form})
+
+
+def all_tickets_view(request):
+    html = 'all_tickets.html'
+
+    all_tickets = Tickets.objects.all()
+
+    return render(request, html, {'all_tickets': all_tickets})
