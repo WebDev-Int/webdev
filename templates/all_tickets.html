@@ -1,7 +1,17 @@
-{% extends 'base.html' %} {% block content %} {% for t in all_tickets %}
+{% extends 'base.html' %} {% block content %} {% comment %} {% for t in
+all_tickets %}
 <a href="/edit/{{ t.id }}" style="color: black">
-    {{t.created_by}}<br/>
-    {{t}} <br/>
- {{ t.ticket_status }}</a><br />
+  {{t.created_by}}<br />
+  {{t}} <br />
+  {{ t.ticket_status }}</a
+><br />
 {{t.completed_by}}<br />
+{% endfor %} {% endcomment %} {% for data in all_tickets %}
+<div style='background:black; color:white'>
+  <p>Client: {{ data.created_by }}</p>
+  <p>{{ data.title }}</p>
+  <p>{{ data.description }}</p>
+  <p>Status: {{ data.ticket_status }}</p>
+  <p>Created: {{ data.post_date }}</p>
+</div>
 {% endfor %} {% endblock %}
