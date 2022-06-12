@@ -33,7 +33,8 @@ urlpatterns = [
     path('logout/', v.logout_view, name='logout'),
     path('edit/<int:id>/', v.edit_ticket_view, name='edit'),
     path('dev/<int:id>/', v.dev_person_view, name='dev'),
-    path('ticket/<int:id>/', v.ticket_detail_view, name='ticket')
+    path('ticket/<int:id>/', v.ticket_detail_view, name='ticket'),
+    path('tickets/', v.all_tickets_view, name='tickets'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 

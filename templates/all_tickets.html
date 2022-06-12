@@ -1,0 +1,7 @@
+{% extends 'base.html' %} {% block content %} {% for t in all_tickets %}
+<a href="/edit/{{ t.id }}" style="color: black">
+    {{t.created_by}}<br/>
+    {{t}} <br/>
+ {{ t.ticket_status }}</a><br />
+{{t.completed_by}}<br />
+{% endfor %} {% endblock %}
