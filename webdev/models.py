@@ -56,6 +56,7 @@ class Profile(models.Model):
     last_name = models.CharField(max_length=100, blank=True)
     plan_on = models.CharField(max_length=100, blank=True)
     image = models.ImageField(default='default.jpg', upload_to='profile_pics')
+    notes = models.TextField(blank=True)
 
     def __str__(self):
         return f'{self.user.username} Profile'
