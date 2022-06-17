@@ -27,6 +27,7 @@ urlpatterns = [
     path('about/', v.about, name='about'),
     path('contact/', v.contact, name='contact'),
     path('services/', v.services, name='services'),
+    path('profile/', v.profile, name='profile'),
     path('newticketform/', v.new_ticket_form_view,
          name='newticketform'),
     path('login/', v.login_view, name='login'),

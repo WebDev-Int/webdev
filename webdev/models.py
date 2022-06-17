@@ -45,3 +45,18 @@ class Tickets(models.Model):
 
     def __str__(self):
         return self.title
+
+
+class Profile(models.Model):
+    user = models.OneToOneField(User, on_delete=models.CASCADE)
+    company_name = models.CharField(max_length=100, blank=True)
+    email = models.EmailField(max_length=100, blank=True)
+    phone = models.CharField(max_length=12, blank=True)
+    first_name = models.CharField(max_length=100, blank=True)
+    last_name = models.CharField(max_length=100, blank=True)
+    plan_on = models.CharField(max_length=100, blank=True)
+    image = models.ImageField(default='default.jpg', upload_to='profile_pics')
+    notes = models.TextField(blank=True)
+
+    def __str__(self):
+        return f'{self.user.username} Profile'
