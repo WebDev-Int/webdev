@@ -33,7 +33,6 @@ ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
     '127.0.0.1:8000',
-    # '*',
 ]
 
 # Application definition
@@ -116,7 +115,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Matamoros'
 
 USE_I18N = True
 
