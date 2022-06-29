@@ -29,10 +29,10 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "www.webdev-international.com",
     "webdev-international.com",
-    '162.246.249.119',
     'localhost',
     '127.0.0.1',
     '127.0.0.1:8000',
+    '45.90.223.200',
 ]
 
 # Application definition
